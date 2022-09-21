@@ -5,13 +5,17 @@ Total Votes: 369,711
 -------------------------
 
 County Votes:
-Jefferson county had a total vote count of 38855, which was 10.509560169970598% of the total election vote count.
-Denver county had a total vote count of 306055, which was 82.78222719908253% of the total election vote count.
-Arapahoe county had a total vote count of 24801, which was 6.708212630946875% of the total election vote count.
 
-Denver county had the largest voter turnout of 306055 voters.
+Jefferson: 10.5% (38,855)
+Denver: 82.8% (306,055)
+Arapahoe: 6.7% (24,801)
 
- Charles Casper Stockham: 23.0% (85,213)
+-------------------------
+Largest County Turnout: Denver
+-------------------------
+Denver county had the largest voter turnout of 306,055 voters.
+
+Charles Casper Stockham: 23.0% (85,213)
 Diana DeGette: 73.8% (272,892)
 Raymon Anthony Doane: 3.1% (11,606)
 -------------------------

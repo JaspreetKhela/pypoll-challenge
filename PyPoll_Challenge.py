@@ -81,7 +81,7 @@ with open(file_to_save, "w") as txt_file:
         f"-------------------------\n"
         f"Total Votes: {total_votes:,}\n"
         f"-------------------------\n\n"
-        f"County Votes:\n")
+        f"County Votes:\n\n")
     print(election_results, end="")
 
     txt_file.write(election_results)
@@ -96,11 +96,11 @@ with open(file_to_save, "w") as txt_file:
         percentage_of_vote = ((county_vote_count)/(total_votes))*(100)
 
         # 6d: Print the county results to the terminal.
-        print(f"{county} county had a total vote count of {county_vote_count}, which was {percentage_of_vote}% of the total election vote count.")
-        print()
+        county_result = f"{county}: {percentage_of_vote:.1f}% ({county_vote_count:,})\n"
+        print(county_result)
 
         # 6e: Save the county votes to a text file.
-        txt_file.write(f"{county} county had a total vote count of {county_vote_count}, which was {percentage_of_vote}% of the total election vote count.\n")
+        txt_file.write(county_result)
 
         # 6f: Write an if statement to determine the winning county and get its vote count.
         if (county_vote_count > largest_turnout_county_votes) and (percentage_of_vote > ((largest_turnout_county_votes)/(total_votes)*(100))):
@@ -108,11 +108,16 @@ with open(file_to_save, "w") as txt_file:
             largest_turnout_county_votes = county_vote_count
 
     # 7: Print the county with the largest turnout to the terminal.
-    print(f"{largest_turnout_county} county had the largest voter turnout of {largest_turnout_county_votes} voters.")
-    print()
+    largest_turnout_county_summary = (
+        f"\n-------------------------\n"
+        f"Largest County Turnout: {largest_turnout_county}\n"
+        f"-------------------------\n")
+    largest_turnout_county_result = f"{largest_turnout_county} county had the largest voter turnout of {largest_turnout_county_votes:,} voters.\n\n"
+    print(largest_turnout_county_summary, largest_turnout_county_result)
 
     # 8: Save the county with the largest turnout to a text file.
-    txt_file.write(f"\n{largest_turnout_county} county had the largest voter turnout of {largest_turnout_county_votes} voters.\n\n ")
+    txt_file.write(largest_turnout_county_summary)
+    txt_file.write(largest_turnout_county_result)
 
     # Save the final candidate vote count to the text file.
     for candidate_name in candidate_votes:
