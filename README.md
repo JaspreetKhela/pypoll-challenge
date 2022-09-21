@@ -31,6 +31,8 @@ _____
   * Diana DeGette won the election. Her vote count was 272,892, which was 73.8% of the total votes.
 
 ## Election Audit Summary
-In summary, this Python script can be modified to tally votes for a multitude of election scenarios. For example, this Python script can be modified and used to
+In summary, this Python script can be modified to extract election insights for a multitude of election scenarios to analyse broader cross-sectional and/or longitudinal election datasets. For example, this Python script can be modified and used to
 * calculate voter demographics information in a election dataset to better understand demographics' voting trends and
 * calculate historial election data to better understand election results over the span of many election cycles.
+
+The insights accrued from these scripts can then be used by political campaigns to better tailor their election rhetoric or sold to businesses in the private sector to better tailor their product and services for particular demographics with a particular political leaning.
